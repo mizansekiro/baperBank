@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <button id="logout-btn" class="py-2 px-6 w-full font-medium bg-rose-800 rounded text-white">Logout</button>
+        <h1 id="header" class="text-5xl text-center mt-12">Sabas you are loged in. Chill bro.
+            There is no Money ha ha ha!!!!!!</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <div>
+            <p id="insufficient-balance" class="text-red-500"></p>
+        </div>
+        <!-- Money and transictions  -->
+        <section class="mt-8">
+            <div class=" grid grid-cols-3 gap-4  text-white">
+                <div class="p-8 text-center bg-rose-400 rounded ">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h2 class="text-4xl">$ <span id="total-deposit-amount">00</span></h2>
+                </div>
+                <div class="p-8 text-center bg-sky-400 rounded ">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h2 class="text-4xl">$<span id="total-withdraw-amount">00</span></h2>
+                </div>
+                <div class="p-8 text-center bg-blue-400 rounded ">
+                    <h3 class="text-2xl">Balance </h3>
+                    <h2 class="text-4xl">$<span id="total-balance-amount">10</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Diposit and Withdraw  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4 ">
+
+                <div class="bg-gradient-to-r from-sky-600 to-sky-400 px-16 py-4 pt-2 m-4 rounded text-center w-3/4">
+                    <h1 class="font-bold text-2xl mb-2 text-white">Please Deposit</h1>
+                    <input id="deposit-amount"
+                        class=" mb-2 p-2 focus:outline-none w-full border border-sky-500 rounded block" type="text"
+                        placeholder="$ Amount want to Deposit">
+                    <button id="deposit-btn"
+                        class="py-2 px-6 w-full font-medium bg-sky-800 rounded text-white">Deposit</button>
+                </div>
+                <div class="bg-gradient-to-r from-rose-500 to-rose-400 px-16 py-4 pt-2 m-4 rounded text-center w-3/4">
+                    <h1 class="font-bold text-2xl mb-2 text-white">Please Withdraw</h1>
+                    <input id="withdraw-amount"
+                        class=" mb-2 p-2 focus:outline-none w-full border border-rose-500 rounded block" type="text"
+                        placeholder="$ Amount want to Withdraw">
+                    <button id="withdraw-btn"
+                        class="py-2 px-6 w-full font-medium bg-rose-800 rounded text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
